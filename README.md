@@ -93,8 +93,8 @@ Note that, for now it only supports following crops
 - Once the project is cloned, open anaconda prompt in the directory where the project was cloned and paste the following block
   ```
   conda create -n harvestify python=3.6.12
-  pip install -r requirements.txt
   conda activate harvestify
+  pip install -r requirements.txt
   ```
 - And finally run the project with
   ```
@@ -131,6 +131,9 @@ This was my first big project so there are lot of things to improve upon
 - More data can be collected manually via web scrapping to make the system more accurate :monocle_face:	
 - Additional plant images can be collected to make the disease detection part more robust and generalized :face_with_head_bandage:
 - Modularized code can be written instead of writing in Jupyter Notebooks (will follow this in upcoming projects)
+
+## Credits 💳
+This project is heavily inspired from **[this GitHub repository](https://github.com/7NNS7/Recommendation-System-for-Farming)** (especially the crop recommendation and fertilizer recommendation part). This project is an extended version of the above mentioned project. Please star the mentioned repo.
 
 ## License 📝
 This project is licensed under [GNU (GENERAL PUBLIC LICENSE)](https://github.com/Gladiator07/Harvestify/blob/master/LICENSE).
