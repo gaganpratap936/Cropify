@@ -176,7 +176,7 @@ def crop_prediction():
         ph = float(request.form['ph'])
         rainfall = float(request.form['rainfall'])
 
-        # state = request.form.get("stt")
+        state = request.form.get("stt")
         city = request.form.get("city")
 
         if weather_fetch(city) != None:
@@ -204,7 +204,7 @@ def fert_recommend():
     K = int(request.form['pottasium'])
     # ph = float(request.form['ph'])
 
-    df = pd.read_csv('Data/fertilizer.csv')
+    df = pd.read_csv('fertilizer.csv')
 
     nr = df[df['Crop'] == crop_name]['N'].iloc[0]
     pr = df[df['Crop'] == crop_name]['P'].iloc[0]
@@ -244,7 +244,7 @@ def disease_prediction():
 
     if request.method == 'POST':
         if 'file' not in request.files:
-            return redirect(request.url)
+            return (request.url)
         file = request.files.get('file')
         if not file:
             return render_template('disease.html', title=title)
